@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.nicolas.dukemarket.javafx.controller.ScrProdutosController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="600.0">
+         <children>
+            <TableView id="tblProduto" fx:id="tblProduto" layoutX="4.0" onMouseClicked="#tblProdutosOnMouseClicked" prefHeight="247.0" prefWidth="600.0">
+              <columns>
+                <TableColumn id="tcoId" fx:id="tcoId" prefWidth="47.0" text="ID" />
+                <TableColumn id="tcoCodBarras" fx:id="tcoCodBarras" prefWidth="76.0" text="Cod.Barras" />
+                  <TableColumn id="tcoDescricao" fx:id="tcoDescricao" prefWidth="201.0" text="Descrição" />
+                  <TableColumn id="tcoQtd" fx:id="tcoQtd" prefWidth="41.0" text="Qtd." />
+                  <TableColumn id="tcoValorCompra" fx:id="tcoValorCompra" prefWidth="70.0" text="\$ Compra" />
+                  <TableColumn id="tcoValorVenda" fx:id="tcoValorVenda" prefWidth="67.0" text="\$ Venda" />
+                  <TableColumn id="tcoDataCadastro" fx:id="tcoDataCadastro" prefWidth="97.0" text="Data Cadastro" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="435.0" layoutY="265.0" prefHeight="122.0" prefWidth="174.0">
+         <children>
+            <Button id="btnExcluir" fx:id="btnExcluir" layoutX="17.0" layoutY="85.0" mnemonicParsing="false" onAction="#btnExcluirClick" prefHeight="25.0" prefWidth="146.0" text="Exclur" />
+            <Button id="btnSalvar" fx:id="btnSalvar" layoutX="17.0" layoutY="50.0" mnemonicParsing="false" onAction="#btnSalvarClick" prefHeight="25.0" prefWidth="146.0" text="Salvar" />
+            <Button id="btnNovo" fx:id="btnNovo" layoutX="17.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnNovoClick" prefHeight="25.0" prefWidth="146.0" text="Novo" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="247.0" prefHeight="158.0" prefWidth="435.0">
+         <children>
+            <Label layoutX="6.0" layoutY="52.0" text="Descrição" />
+            <DatePicker id="dtpDataCadastro" fx:id="dtpDataCadastro" layoutX="271.0" layoutY="17.0" prefHeight="25.0" prefWidth="149.0" />
+            <TextField id="txtId" fx:id="txtId" layoutX="50.0" layoutY="17.0" prefHeight="25.0" prefWidth="108.0" />
+            <Label layoutX="24.0" layoutY="21.0" text="ID" />
+            <Label layoutX="7.0" layoutY="88.0" text="Qtd." />
+            <Label layoutX="197.0" layoutY="119.0" text="Valor Venda" />
+            <Label layoutX="191.0" layoutY="21.0" text="Data Cadastro" />
+            <Label layoutX="8.0" layoutY="119.0" text="Cod. Barras" />
+            <Label layoutX="192.0" layoutY="88.0" text="Valor Compra" />
+            <TextField id="txtDescricao" fx:id="txtDescricao" layoutX="65.0" layoutY="48.0" prefHeight="25.0" prefWidth="354.0" />
+            <TextField id="txtCodBarras" fx:id="txtCodBarras" layoutX="75.0" layoutY="115.0" prefHeight="25.0" prefWidth="86.0" />
+            <TextField id="txtQtd" fx:id="txtQtd" layoutX="38.0" layoutY="84.0" prefHeight="25.0" prefWidth="122.0" />
+            <TextField id="txtValorCompra" fx:id="txtValorCompra" layoutX="272.0" layoutY="84.0" />
+            <TextField id="txtValorVenda" fx:id="txtValorVenda" layoutX="272.0" layoutY="115.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

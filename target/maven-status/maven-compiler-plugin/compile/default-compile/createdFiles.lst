@@ -1,0 +1,12 @@
+br\com\nicolas\dukemarket\javafx\DAO\ClienteDAO.class
+br\com\nicolas\dukemarket\javafx\DAO\ProdutoDAO.class
+br\com\nicolas\dukemarket\javafx\PrimaryController.class
+module-info.class
+br\com\nicolas\dukemarket\javafx\controller\ScrClientesController.class
+br\com\nicolas\dukemarket\javafx\App.class
+br\com\nicolas\dukemarket\javafx\model\Produto.class
+br\com\nicolas\dukemarket\javafx\model\Cliente.class
+br\com\nicolas\dukemarket\javafx\SecondaryController.class
+connection\MySQLConnection.class
+br\com\nicolas\dukemarket\javafx\controller\ScrProdutosController.class
+br\com\nicolas\dukemarket\javafx\controller\MenuPrincipalController.class
