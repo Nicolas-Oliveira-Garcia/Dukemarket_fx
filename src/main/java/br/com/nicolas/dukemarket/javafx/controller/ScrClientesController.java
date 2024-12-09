@@ -151,7 +151,7 @@ public class ScrClientesController implements Initializable {
         txtEmail.setText("");
         this.flagNovo = true;
     }
-    
+    // captura de clique na tabela
     @FXML
     public void tblClienteOnMouseClicked(){
         this.pClicked = tblCliente.getSelectionModel().getSelectedItem();
